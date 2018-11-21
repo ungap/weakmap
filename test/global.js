@@ -9,8 +9,8 @@ function loadScript(src, onload) {
 
 function loadTest(what, message) {
   requiring(what);
-  loadScript('./index.js', function () {
-    alert(message);
+  loadScript('./index.js?_=' + Math.random(), function () {
+    alert(message || 'OK');
   });
 }
 
