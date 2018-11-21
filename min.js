@@ -1,0 +1,2 @@
+/*! (c) Andrea Giammarchi - ISC */
+var $WeakMap;try{$WeakMap=WeakMap}catch(o_O){$WeakMap=function(t,e){"use strict";function a(e){r(this,"_",{value:"_@ungap/weakmap"+t++}),e&&e.forEach(n,this)}function n(t){this.set(t[0],t[1])}var r=e.defineProperty,i=e.hasOwnProperty,s=a.prototype;return s["delete"]=function(t){return this.has(t)&&delete t[this._]},s.get=function(t){return this.has(t)?t[this._]:void 0},s.has=function(t){return i.call(t,this._)},s.set=function(t,e){return r(t,this._,{configurable:!0,value:e}),this},a}(Math.random(),Object)}
