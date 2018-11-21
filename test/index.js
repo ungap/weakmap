@@ -1,5 +1,3 @@
-
-
 var WeakMap = require('../cjs');
 
 test();

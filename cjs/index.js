@@ -1,10 +1,9 @@
 /*! (c) Andrea Giammarchi - ISC */
-var $WeakMap;
-try { $WeakMap = WeakMap; }
+try { new WeakMap; }
 catch (o_O) {
   // this could be better but 90% of the time
   // it's everything developers need as fallback
-  $WeakMap = (function (id, Object) {'use strict';
+  WeakMap = (function (id, Object) {'use strict';
     var dP = Object.defineProperty;
     var hOP = Object.hasOwnProperty;
     var proto = WeakMap.prototype;
@@ -32,4 +31,4 @@ catch (o_O) {
     }
   }(Math.random(), Object));
 }
-module.exports = $WeakMap;
+module.exports = WeakMap;

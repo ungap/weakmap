@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ungap WeakMap</title>
+  <script src="global.js"></script>
+  <script type="module">
+  import WM from '../esm/index.js';
+  window.WM = WM;
+  </script>
+  <script>
+  this.onload = function () {
+    if (!this.WM)
+      loadScript('../min.js', function () {
+        loadTest(WeakMap, 'WeakMap!');
+      });
+    else {
+      console.assert(WM === WeakMap);
+      loadTest(WeakMap, 'WeakMap!');
+    }
+  };
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
