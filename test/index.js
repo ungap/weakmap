@@ -11,7 +11,6 @@ test();
 function test() {
   var a = {};
   var b = {};
-  var c = {};
 
   var ws1 = new WeakMap;
   var ws2 = new WeakMap([[a, b]]);
