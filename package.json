@@ -1,6 +1,6 @@
 {
   "name": "@ungap/weakmap",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "An essential WeakMap polyfill for legacy browsers.",
   "main": "cjs/index.js",
   "module": "esm/index.js",
