@@ -7,3 +7,7 @@ An essential [WeakMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/R
   * CDN via https://unpkg.com/@ungap/weakmap
   * ESM via `import WeakSet from '@ungap/weakmap'`
   * CJS via `const WeakSet = require('@ungap/weakmap')`
+
+Compatible down to IE9, works well with ES5 shim upfront in IE8 (and maybe lower too).
+
+[Live test](https://ungap.github.io/weakmap/test/)
