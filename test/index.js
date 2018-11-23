@@ -4,6 +4,22 @@ test();
 delete require.cache[require.resolve('../cjs')];
 global.WeakMap = void 0;
 
+if (typeof process !== 'undefined') {
+  var i = 0;
+  Object.defineProperty(global, 'WeakMap', {
+    configurable: true,
+    get: function () {
+      if (1 === i++)
+        throw WeakMap;
+      return $WeakMap;
+    },
+    set: function (WeakMap) {
+      delete global.WeakMap;
+      global.WeakMap = WeakMap;
+    }
+  });
+}
+
 WeakMap = require('../cjs');
 test();
 
