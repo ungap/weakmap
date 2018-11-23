@@ -5,8 +5,8 @@
 An essential [WeakMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap) polyfill for legacy browsers.
 
   * CDN via https://unpkg.com/@ungap/weakmap
-  * ESM via `import WeakSet from '@ungap/weakmap'`
-  * CJS via `const WeakSet = require('@ungap/weakmap')`
+  * ESM via `import WeakMap from '@ungap/weakmap'`
+  * CJS via `const WeakMap = require('@ungap/weakmap')`
 
 Compatible down to IE9, works well with ES5 shim upfront in IE8 (and maybe lower too).
 
