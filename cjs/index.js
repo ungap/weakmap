@@ -1,5 +1,5 @@
 /*! (c) Andrea Giammarchi - ISC */
-var self = this || /* istanbul ignore next */ {};
+var self = {};
 try { self.WeakMap = WeakMap; }
 catch (WeakMap) {
   // this could be better but 90% of the time
